@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
-$(call inherit-product, device/xiaomi/ginkgo/device.mk)
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common r5x stuff
 TARGET_BOOT_ANIMATION_RES := 720
